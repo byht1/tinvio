@@ -1,3 +1,8 @@
-@import "./utils/variables.scss";
-@import "./utils/normalize.scss";
-@import "./utils/global.scss";
+@import './utils/variables.scss';
+@import './utils/normalize.scss';
+@import './utils/mixin.scss';
+@import './utils/global.scss';
+
+@import './ui/ui.scss';
+
+@import './components/header.scss';

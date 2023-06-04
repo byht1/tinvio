@@ -1,0 +1,165 @@
+.header__box {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include tabletMax {
+    & div {
+      opacity: 0;
+      transition: $eOpacity;
+    }
+    .show & div {
+      opacity: 1;
+    }
+  }
+}
+
+.logo {
+  width: 132px;
+}
+
+.language_box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu {
+  @include tabletMax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 95px;
+    padding-bottom: 16px;
+
+    display: grid;
+    grid-template-rows: 1fr min-content;
+
+    text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: $eOpacity;
+
+    .show & {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.nav {
+  align-self: center;
+  justify-self: center;
+}
+
+.nav__list {
+  @include tabletMax {
+    & li {
+      padding: 20px;
+    }
+  }
+  @include laptop {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.nav__link {
+  padding: 20px;
+  cursor: pointer;
+
+  font-family: 'Gilroy';
+
+  color: var(--text-main);
+  transition: $eColor;
+  @include laptop {
+    padding: 10px 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--text-primary);
+  }
+}
+
+.current {
+  color: var(--text-primary);
+}
+
+.burger__button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: $eOpacity;
+  }
+
+  & .burger {
+    opacity: 1;
+  }
+
+  @include laptop {
+    display: none;
+  }
+}
+
+.show .burger {
+  opacity: 0;
+}
+
+.show .close {
+  opacity: 1;
+}
+
+.header-button__start.red {
+  width: 188px;
+  margin: 0 auto;
+  @include laptop {
+    display: none;
+  }
+}
+.header-button__start.withe {
+  display: none;
+  @include laptop {
+    display: inline-block;
+  }
+}
+
+.network-box {
+  margin: 0 auto;
+  margin-top: 36px;
+  display: flex;
+  gap: 32px;
+  @include laptop {
+    display: none;
+  }
+}
+
+.network-list,
+.store-list {
+  display: flex;
+  gap: 16px;
+  @include laptop {
+    display: none;
+  }
+}

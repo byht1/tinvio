@@ -10,6 +10,7 @@ html {
   --input-color: #f3f4f5;
 
   // Backgrounds Color
+  --bg-main: #ededed;
   --bg-grey: #f6f6f6;
   --bg-black: #363636;
   --bg-diamond: #fb242b;
@@ -17,8 +18,10 @@ html {
 
   // Button
   --btn-primary: #ff474d;
+  --btn-primary-80: rgba(255, 71, 77, 0.8);
   --btn-second: #ffffff;
   --btn-text: #212121;
+  --btn-event: #e0e0e1;
 }
 
 $cube: cubic-bezier(0.4, 0, 0.2, 1);

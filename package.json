@@ -11,6 +11,7 @@
   "devDependencies": {
     "sass": "^1.62.1",
     "vite": "^4.3.9",
+    "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
 }
