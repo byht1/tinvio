@@ -1,0 +1,29 @@
+html {
+  // text
+  --text-main: #212121;
+  --text-primary: #ff474d;
+  --text-withe: #ffffff;
+  --text-second: #5c5c5c;
+  --text-placeholder: #bdbdbd;
+
+  // input
+  --input-color: #f3f4f5;
+
+  // Backgrounds Color
+  --bg-grey: #f6f6f6;
+  --bg-black: #363636;
+  --bg-diamond: #fb242b;
+  --bg-diamond-60: rgba(251, 36, 43, 0.6);
+
+  // Button
+  --btn-primary: #ff474d;
+  --btn-second: #ffffff;
+  --btn-text: #212121;
+}
+
+$cube: cubic-bezier(0.4, 0, 0.2, 1);
+
+$eBackgroundColor: background-color 250ms $cube;
+$eColor: color 250ms $cube;
+$eBorderColor: border-color 250ms $cube;
+$eOpacity: opacity 250ms $cube;
