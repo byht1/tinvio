@@ -1,0 +1,230 @@
+.hero__box {
+  padding: 54px 6px 276px 6px;
+  max-width: 477px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  @include tablet {
+    & {
+      padding-top: 40px;
+      padding-bottom: 392px;
+    }
+  }
+  @include laptop {
+    & {
+      margin: 0;
+      padding-top: 169px;
+      padding-bottom: 197px;
+
+      text-align: left;
+    }
+  }
+
+  @include desktop {
+    & {
+      margin: 0;
+      padding-top: 164px;
+      padding-bottom: 200px;
+
+      text-align: left;
+    }
+  }
+}
+
+.hero__title {
+  position: relative;
+  width: 333px;
+  margin: 0 auto;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21;
+
+  color: var(--text-main);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -34px;
+    left: 2px;
+    width: 100%;
+    height: 42px;
+
+    background-image: url('/img/hero/stars.png');
+    background-repeat: no-repeat;
+    @include tablet {
+      & {
+        left: -24px;
+      }
+    }
+  }
+
+  & span {
+    color: var(--text-primary);
+  }
+
+  @include tablet {
+    & {
+      font-size: 32px;
+    }
+  }
+
+  @include laptop {
+    & {
+      margin: 0;
+      width: 373px;
+
+      font-size: 36px;
+    }
+  }
+
+  @include desktop {
+    & {
+      width: 427px;
+      font-size: 44px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      width: 478px;
+      font-size: 48px;
+    }
+  }
+}
+
+.hero__text {
+  margin-top: 16px;
+
+  font-family: 'Inter';
+  font-size: 14px;
+  line-height: 1.57;
+
+  color: var(--text-second);
+
+  @include tablet {
+    & {
+      font-size: 16px;
+    }
+  }
+
+  @include laptop {
+    & {
+      width: 334px;
+    }
+  }
+
+  @include desktop {
+    & {
+      width: 369px;
+      font-size: 18px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      width: 415px;
+      font-size: 20px;
+    }
+  }
+}
+
+.hero__button {
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @include tabletMax {
+    & {
+      grid-column: 2;
+    }
+  }
+}
+
+.hero-try__box {
+  margin-top: 32px;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 12px;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: var(--text-second);
+
+  @include laptop {
+    & {
+      grid-template-columns: max-content;
+    }
+  }
+
+  @include fullHd {
+    & {
+      font-size: 16px;
+    }
+  }
+
+  &-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    @include tabletMax {
+      & {
+        grid-column: 2;
+        grid-row: 2;
+      }
+    }
+
+    @include laptop {
+      & {
+        align-items: center;
+      }
+    }
+  }
+}
+
+.hero-bg {
+  overflow-x: hidden;
+  background-image: url('/img/hero/hero_bg_phone.png');
+  background-size: 1097px;
+  background-repeat: no-repeat;
+  background-position: left -481px top 321px;
+
+  @include tablet {
+    & {
+      background-image: url('/img/hero/hero_bg_tablet.png');
+      background-size: 1786px;
+      background-position: left -706px top 254px;
+    }
+  }
+
+  @include laptop {
+    & {
+      background-image: url('/img/hero/hero_bg_laptop.png');
+      background-size: 1472px;
+      background-position: right -788px top -273px;
+    }
+  }
+
+  @include desktop {
+    & {
+      background-position: right -694px top -273px;
+    }
+  }
+
+  @include hd {
+    & {
+      background-position: right -614px top -273px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      background-position: right -375px top -273px;
+    }
+  }
+}

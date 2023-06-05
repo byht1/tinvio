@@ -11,8 +11,14 @@
   transition: $eColor, $eBackgroundColor;
   border-radius: 16px;
 
+  @include fullHd {
+    & {
+      font-size: 20px;
+    }
+  }
+
   &.red {
-    color: var(--text-withe);
+    color: var(--text-white);
     background-color: var(--btn-primary);
 
     &:hover,
@@ -21,7 +27,7 @@
     }
   }
 
-  &.withe {
+  &.white {
     color: var(--btn-text);
     background-color: var(--btn-second);
 

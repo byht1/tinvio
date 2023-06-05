@@ -34,6 +34,7 @@
 .menu {
   @include tabletMax {
     position: absolute;
+    z-index: 2s;
     top: 0;
     left: 0;
     width: 100vw;
@@ -49,6 +50,7 @@
     opacity: 0;
     pointer-events: none;
 
+    background-color: var(--bg-main);
     transition: $eOpacity;
 
     .show & {
@@ -138,7 +140,7 @@
     display: none;
   }
 }
-.header-button__start.withe {
+.header-button__start.white {
   display: none;
   @include laptop {
     display: inline-block;
