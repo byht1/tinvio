@@ -14,8 +14,8 @@
     transform: skew(-8deg) rotate(-8deg);
     border-radius: 50px;
 
-    background-color: #f7f7f7;
-    // background-color: teal;
+    // background-color: #f7f7f7;
+    background-color: teal;
 
     @include tablet {
       & {
@@ -47,12 +47,12 @@
   background-image: url('/img/checkOut/diamond_dg.png'), url('/img/checkOut/diamond_dg_2.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 299px, 200px;
-  background-position: 237px calc(100% + 21.5px), -92px calc(100% - 260px);
+  background-position: right -161px bottom -21px, left -92px bottom 260px;
 
   @include tablet {
     & {
       background-size: 299px, 297px;
-      background-position: 599px calc(100% - 110px), -85px 50%;
+      background-position: right -130px bottom 110px, left -85px bottom 526px;
     }
   }
 
