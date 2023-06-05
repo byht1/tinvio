@@ -12,6 +12,12 @@
 
 @font-face {
   font-family: 'Gilroy';
+  font-weight: 600;
+  src: url('../../fonts/Gilroy/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
   font-weight: 700;
   src: url('./fonts/Gilroy/Gilroy-Bold.ttf');
 }
