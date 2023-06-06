@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/tinvio/vite.svg" />
     <link rel="stylesheet" href="/tinvio/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/tinvio/assets/index-68a85764.js"></script>
-    <link rel="stylesheet" href="/tinvio/assets/index-2ce860d6.css">
+    <script type="module" crossorigin src="/tinvio/assets/index-1a5478c3.js"></script>
+    <link rel="stylesheet" href="/tinvio/assets/index-15382db0.css">
   </head>
   <body>
     <div class="hero-bg">
@@ -100,7 +102,7 @@
     <section class="container" id="checkOut">
       <div class="checkOut__box">
         <div>
-          <h2 class="checkOut__title">Check out how it works</h2>
+          <h2 class="title2">Check out how it works</h2>
           <p class="checkOut__text">
             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect
             payments across your supply chain — all within one dashboard.
@@ -116,6 +118,186 @@
       </div>
     </section>
   </div>
+</div>
+
+        <section id="features">
+  <div class="features__wrapper">
+    <div class="container">
+      <div class="features__box">
+        <h2 class="title2 features__title">
+          Smarter supply chain transactions. <span>More buddy</span>
+        </h2>
+        <ul class="features-list">
+          <li><button class="features__button" data-operation="chats">Chats</button></li>
+          <li><button class="features__button" data-operation="orders">Orders</button></li>
+          <li><button class="features__button" data-operation="payments">Payments</button></li>
+        </ul>
+        <div class="features-info">
+          <ul class="list-chats">
+            <li><p>Create chats with any business (even if they’re not on Tinvio)</p></li>
+            <li><p>Fully integrated with your favorite chat apps</p></li>
+            <li><p>Real-time messages and alerts</p></li>
+          </ul>
+          <ul class="list-orders visually-hidden">
+            <li><p>Create or confirm purchase orders at lightning speed</p></li>
+            <li><p>Manage inventory details and availability in real-time</p></li>
+            <li><p>24/7 order insights and data reports</p></li>
+          </ul>
+          <ul class="list-payments visually-hidden">
+            <li><p>Send invoices and easily track them until they’re paid</p></li>
+            <li><p>Real-time payments settlement and reconciliation</p></li>
+            <li><p>Safe, secure, and compliant</p></li>
+          </ul>
+        </div>
+        <button type="button" class="button red features__main-button">More Features</button>
+      </div>
+    </div>
+    <div class="features-img__box">
+      <picture>
+        <source
+          srcset="/tinvio/img/features/features_mobile.png"
+          media="(max-width: 767.98px)"
+          type="image/png"
+        />
+        <source
+          srcset="/tinvio/img/features/features_tablet.png"
+          media="(max-width: 1023.98px)"
+          type="image/png"
+        />
+        <img src="/tinvio/img/features/features_chats.png" alt="chats" data-img="chats" />
+      </picture>
+      <picture>
+        <source
+          srcset="/tinvio/img/features/features_mobile.png"
+          media="(max-width: 767.98px)"
+          type="image/png"
+        />
+        <source
+          srcset="/tinvio/img/features/features_tablet.png"
+          media="(max-width: 1023.98px)"
+          type="image/png"
+        />
+        <img
+          src="/tinvio/img/features/features_orders.png"
+          alt="orders"
+          class="visually-hidden"
+          data-img="orders"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/tinvio/img/features/features_mobile.png"
+          media="(max-width: 767.98px)"
+          type="image/png"
+        />
+        <source
+          srcset="/tinvio/img/features/features_tablet.png"
+          media="(max-width: 1023.98px)"
+          type="image/png"
+        />
+        <img
+          src="/tinvio/img/features/features_payments.png"
+          alt="chats"
+          class="visually-hidden"
+          data-img="payments"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+        <section class="container" id="featuresOn">
+  <div class="featuresOn__box">
+    <h2 class="title2">Featured On</h2>
+    <ul class="list-logo">
+      <li><img src="/tinvio/img/featuredOn/featured_logo_1.png" alt="TC tech crunch logo" /></li>
+      <li><img src="/tinvio/img/featuredOn/featured_logo_2.png" alt="VA tech in asia logo" /></li>
+      <li><img src="/tinvio/img/featuredOn/featured_logo_3.png" alt="pymnts logo" /></li>
+      <li><img src="/tinvio/img/featuredOn/featured_logo_4.png" alt="venture beat logo" /></li>
+    </ul>
+  </div>
+</section>
+
+        <div class="whyChoose-bg">
+  <section class="" id="whyChoose">
+    <div class="whyChoose__box">
+      <h2 class="title2">Why choose Tinvio?</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide">
+              <img src="/tinvio/img/whyChoose/slide_1.png" alt="rise" />
+              <p class="slide__text">
+                Tinvio has been a foundational partner and solution. We now have faster and more
+                efficient communication with our clients, which makes order processing and
+                deliveries smoother than ever before.
+              </p>
+              <div class="brenda__box">
+                <img src="/tinvio/img/whyChoose/brenda_logo_slide_1.png" alt="Hafidz & Indah" />
+                <div>
+                  <h3>Hafidz & Indah</h3>
+                  <p>Owners (Sejadah Grocery)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img src="/tinvio/img/whyChoose/slide_2.png" alt="rise" />
+              <p class="slide__text">
+                With Tinvio, it's easier for my customers to make payments across various methods.
+                Every payment is also collected in one business account where funds can be withdrawn
+                instantly at any time.
+              </p>
+              <div class="brenda__box">
+                <img src="/tinvio/img/whyChoose/brenda_logo_slide_2.png" alt="Hafidz & Indah" />
+                <div>
+                  <h3>Pauline Limgenco</h3>
+                  <p>Director (Moonleaf)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img src="/tinvio/img/whyChoose/slide_3.png" alt="rise" />
+              <p class="slide__text">
+                Tinvio helps our business run smoother. We can manage our customer's orders,
+                receivables, and most importantly, trace and reconcile their payments without
+                checking banking apps or statements.
+              </p>
+              <div class="brenda__box">
+                <img src="/tinvio/img/whyChoose/brenda_logo_slide_3.png" alt="Hafidz & Indah" />
+                <div>
+                  <h3>Punnasiri Chaipatikul</h3>
+                  <p>Business Development Manager (Phaitong Station)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img src="/tinvio/img/whyChoose/slide_4.png" alt="rise" />
+              <p class="slide__text">
+                Tinvio definitely helps to reduce the time and errors in order management between
+                customers and suppliers. It’s super easy to use and available on mobile and web, and
+                the team are friendly and always helpful.
+              </p>
+              <div class="brenda__box">
+                <img src="/tinvio/img/whyChoose/brenda_logo_slide_4.png" alt="Hafidz & Indah" />
+                <div>
+                  <h3>Fathira Dida</h3>
+                  <p>Owner (Baker Old)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination" style="bottom: auto; transform: translateY(24px)"></div>
+    </div>
+  </section>
 </div>
 
       </main>
