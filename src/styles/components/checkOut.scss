@@ -14,8 +14,8 @@
     transform: skew(-8deg) rotate(-8deg);
     border-radius: 50px;
 
-    // background-color: #f7f7f7;
-    background-color: teal;
+    background-color: #f7f7f7;
+    // background-color: teal;
 
     @include tablet {
       & {
@@ -36,6 +36,12 @@
         top: 140px;
         left: 54px;
         height: 663px;
+      }
+    }
+
+    @include hd {
+      & {
+        width: 2800px;
       }
     }
   }
@@ -59,7 +65,7 @@
   @include laptop {
     & {
       background-size: 253px 192px, 297px;
-      background-position: left 869px bottom 129px, left -73px bottom -67px;
+      background-position: left 869px bottom 10px, left -73px bottom -67px;
     }
   }
 
@@ -101,9 +107,6 @@
 
   @include laptop {
     & {
-      padding-top: 150px;
-      padding-bottom: 150px;
-
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -116,13 +119,13 @@
   @include laptop {
     & {
       padding-top: 189px;
-      padding-bottom: 147px;
+      padding-bottom: 45px;
     }
   }
 
   @include desktop {
     & {
-      padding-bottom: 132px;
+      padding-bottom: 35px;
       align-items: self-start;
       gap: 73px;
 
@@ -137,32 +140,10 @@
       gap: 145px;
     }
   }
-}
-
-.checkOut__title {
-  font-family: 'Gilroy';
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.18;
-
-  color: var(--text-main);
-
-  @include tablet {
-    & {
-      font-size: 32px;
-      line-height: 1.21;
-    }
-  }
-
-  @include desktop {
-    & {
-      font-size: 36px;
-    }
-  }
 
   @include fullHd {
     & {
-      font-size: 44px;
+      padding-top: 130px;
     }
   }
 }

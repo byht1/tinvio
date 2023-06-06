@@ -1,0 +1,130 @@
+.whyChoose-bg {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 1853px;
+    height: 904px;
+
+    transform-origin: left center;
+    transform: skew(-8deg) rotate(-8deg);
+    border-radius: 50px;
+
+    opacity: 0.88;
+
+    background: #363636;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 1853px;
+    height: 904px;
+
+    background-image: url('/img/whyChoose/whyChoose_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+
+    transform-origin: left bottom;
+    transform: rotate(-8deg);
+  }
+}
+
+#whyChoose {
+  position: relative;
+  padding-left: 32px;
+  z-index: 3;
+
+  h2 {
+    text-align: center;
+    color: var(--text-white);
+  }
+}
+
+.whyChoose__box {
+  padding-top: 258px;
+  padding-bottom: 165px;
+}
+
+.slide {
+  padding: 25px 16px 48px 24px;
+
+  border-radius: 32px;
+
+  background-color: #ffffff;
+
+  & > img {
+    margin: 0 auto;
+    height: 235px;
+    width: auto;
+  }
+}
+
+.slide__text {
+  margin-left: -24px;
+  padding: 19px 16px 24px 24px;
+
+  font-size: 16px;
+  line-height: 1.44;
+
+  background-color: #f1f1f1;
+}
+
+.brenda__box {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  align-items: center;
+  gap: 12px;
+
+  & h3 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  & p {
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.swiper {
+  position: relative;
+  margin-top: 32px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  background: radial-gradient(
+    95.51% 95.51% at 50% 50%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(250, 250, 250, 0.2) 100%
+  );
+  opacity: 1;
+  transition: background 250ms linear;
+
+  &-active {
+    background: radial-gradient(
+      136.24% 142.18% at 50% 50%,
+      #ffffff 0%,
+      rgba(250, 250, 250, 0.8) 100%
+    );
+  }
+}
