@@ -1,48 +1,145 @@
+.stars_box-dg {
+  background-image: url('/img/whyChoose/mobile/bg_stars_mobile.png');
+  background-repeat: no-repeat;
+  background-position: top 398px right 0;
+
+  background-size: 356px 218px;
+
+  @media screen and (max-width: 406.98px) {
+    & {
+      background-position: top 438px right 0;
+    }
+  }
+
+  @include tablet {
+    & {
+      background-image: url('/img/whyChoose/table/bg_stars_table.png');
+      background-position: top 175px right 0;
+      background-size: 656px 349px;
+    }
+  }
+
+  @include laptop {
+    & {
+      background-image: url('/img/whyChoose/laptop/bg_stars_laptop.png');
+      background-position: top 72px right 0;
+      background-size: 942px 393px;
+    }
+  }
+
+  @include desktop {
+    & {
+      background-image: url('/img/whyChoose/desktop/bg_stars_desktop.png');
+      background-position: top 41px right 0;
+      background-size: 941px 382px;
+    }
+  }
+
+  @include hd {
+    & {
+      background-image: url('/img/whyChoose/hd/bg_stars_hd.png');
+      background-position: top 20px right 0;
+      background-size: 946px 392px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      margin: 0 auto;
+      max-width: 1955px;
+
+      background-image: url('/img/whyChoose/fullHd/bg_stars_fullHd.png');
+      background-position: top 0 right 0;
+      background-size: 946px 392px;
+    }
+  }
+}
+
 .whyChoose-bg {
   position: relative;
 
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 1853px;
-    height: 904px;
+  background-image: url('/img/whyChoose/mobile/bg_mobile.png');
+  background-repeat: no-repeat;
+  background-position: left -125px bottom 0px;
+  background-size: cover;
 
-    transform-origin: left center;
-    transform: skew(-8deg) rotate(-8deg);
-    border-radius: 50px;
-
-    opacity: 0.88;
-
-    background: #363636;
+  @include tablet {
+    & {
+      background-image: url('/img/whyChoose/table/bg_table.png');
+      background-position: left -132px bottom 0;
+    }
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 1853px;
-    height: 904px;
+  @include laptop {
+    & {
+      background-image: url('/img/whyChoose/laptop/bg_laptop.png');
+      background-position: left -91px bottom 0;
+    }
+  }
 
-    background-image: url('/img/whyChoose/whyChoose_bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom 0 left 0;
+  @include desktop {
+    & {
+      background-image: url('/img/whyChoose/desktop/bg_desktop.png');
+      background-position: left -43px bottom -25px;
+    }
+  }
 
-    transform-origin: left bottom;
-    transform: rotate(-8deg);
+  @include hd {
+    & {
+      background-image: url('/img/whyChoose/hd/bg_hd.png');
+      background-position: left -42px bottom -25px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      margin: 0 auto;
+      max-width: 2095px;
+
+      background-image: url('/img/whyChoose/fullHd/bg_fullHd.png');
+      background-position: left -42px bottom -25px;
+      background-size: 2095px 976px;
+    }
   }
 }
 
 #whyChoose {
   position: relative;
-  padding-left: 32px;
+  padding: 0 32px;
   z-index: 3;
+
+  @media screen and (max-width: 406.98px) {
+    & {
+      padding-right: 0;
+    }
+  }
+
+  @include laptop {
+    & {
+      padding-left: 63px;
+      padding-right: 14px;
+    }
+  }
+
+  @include desktop {
+    & {
+      padding: 0 124px;
+    }
+  }
+
+  @include hd {
+    & {
+      padding: 0 204px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      padding: 0 294px;
+      margin: 0 auto;
+      max-width: 1930px;
+    }
+  }
 
   h2 {
     text-align: center;
@@ -51,25 +148,71 @@
 }
 
 .whyChoose__box {
-  padding-top: 258px;
-  padding-bottom: 165px;
+  padding-top: 306px;
+  padding-bottom: 203px;
+
+  @include tablet {
+    & {
+      padding-top: 332px;
+      padding-bottom: 334px;
+    }
+  }
+
+  @include laptop {
+    & {
+      padding-top: 299px;
+      padding-bottom: 198px;
+    }
+  }
+
+  @include desktop {
+    & {
+      padding-top: 268px;
+      padding-bottom: 178px;
+    }
+  }
+
+  @include hd {
+    & {
+      padding-top: 285px;
+      padding-bottom: 227px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      padding-top: 273px;
+      padding-bottom: 257px;
+    }
+  }
 }
 
 .slide {
   padding: 25px 16px 48px 24px;
+  margin: 0 auto;
+  max-width: 490px;
 
   border-radius: 32px;
 
   background-color: #ffffff;
 
-  & > img {
-    margin: 0 auto;
-    height: 235px;
-    width: auto;
+  @include laptop {
+    & {
+      position: relative;
+      padding: 32px 159px 48px 32px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  @include fullHd {
+    & {
+      padding: 32px 165px 56px 32px;
+    }
   }
 }
 
-.slide__text {
+.swiper-wrapper .slide__text {
   margin-left: -24px;
   padding: 19px 16px 24px 24px;
 
@@ -77,6 +220,26 @@
   line-height: 1.44;
 
   background-color: #f1f1f1;
+
+  @include laptop {
+    & {
+      margin: 0;
+      padding: 24px 191px 24px 24px;
+      font-size: 18px;
+
+      background-image: url('/img/whyChoose/double_quotes.svg');
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: right 167px bottom 24px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      padding-right: 161px;
+      font-size: 20px;
+    }
+  }
 }
 
 .brenda__box {
@@ -86,17 +249,45 @@
   align-items: center;
   gap: 12px;
 
+  @include laptop {
+    & {
+      margin-top: 20px;
+      grid-template-columns: 98px 1fr;
+    }
+  }
+
   & h3 {
     font-family: 'Gilroy';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+
+    @include tablet {
+      & {
+        font-size: 18px;
+      }
+    }
   }
 
   & p {
     font-size: 10px;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @include tablet {
+      & {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include tabletMax {
+    & div {
+      background-image: url('/img/whyChoose/double_quotes.svg');
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: right 0;
+    }
   }
 }
 
@@ -105,6 +296,76 @@
   margin-top: 32px;
   width: 100%;
   height: 100%;
+
+  @include laptop {
+    & {
+      margin-top: 42px;
+    }
+  }
+}
+
+.swiper-slide {
+  & .slide-img {
+    margin: 0 auto;
+    height: 235px;
+    width: auto;
+
+    @include tablet {
+      & {
+        height: 298px;
+      }
+    }
+
+    @include laptop {
+      & {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        right: 16px;
+      }
+    }
+  }
+
+  @include laptop {
+    & .slide-4 .slide-img {
+      top: 50%;
+      transform: translateY(-50%);
+
+      height: 317px;
+    }
+  }
+}
+
+.mySwiper {
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    height: auto;
+    margin: 0;
+  }
+
+  & .swiper-button-prev::after,
+  & .swiper-button-next::after {
+    padding: 10px 14px;
+
+    font-size: 20px;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+    background-color: #d2d2d2;
+  }
+}
+
+.swiper-button-box {
+  margin-top: 44px;
+  display: flex;
+  gap: 50px;
+
+  @include tabletMax {
+    & {
+      display: none;
+    }
+  }
 }
 
 .swiper-pagination .swiper-pagination-bullet {
