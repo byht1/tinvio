@@ -1,0 +1,695 @@
+.happyBusinesses__box {
+  padding: 78px 0;
+  text-align: center;
+}
+
+.businesses-list__box {
+  position: relative;
+  margin: 54px auto 0 auto;
+
+  width: 343px;
+  height: 623px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    & {
+      width: 737px;
+      height: 890px;
+    }
+  }
+
+  @include laptop {
+    & {
+      width: 945px;
+      height: 623px;
+    }
+  }
+
+  @include desktop {
+    & {
+      width: 1032px;
+    }
+  }
+
+  @include hd {
+    & {
+      width: 1192px;
+    }
+  }
+
+  @include hd {
+    & {
+      width: 1313px;
+      height: 643px;
+    }
+  }
+}
+
+.businesses-list__element {
+  position: absolute;
+}
+
+.businesses-list__element:nth-child(1) {
+  left: 0;
+  top: 129px;
+
+  @include tablet {
+    & {
+      top: 258px;
+    }
+  }
+
+  @include laptop {
+    & {
+      top: auto;
+      left: 168px;
+      bottom: 0;
+    }
+  }
+
+  @include fullHd {
+    & {
+      left: 284px;
+    }
+  }
+
+  & img {
+    width: 30.45px;
+    height: 37.21px;
+
+    @include tablet {
+      & {
+        width: 44.23px;
+        height: 54.06px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 48.26px;
+        height: 58.98px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 54px;
+        height: 66px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(2) {
+  top: 61px;
+  left: 66px;
+
+  @include tablet {
+    & {
+      top: 114px;
+      left: 144px;
+    }
+  }
+
+  @include laptop {
+    & {
+      top: auto;
+      left: 0;
+      bottom: 84px;
+    }
+  }
+
+  & img {
+    width: 40.6px;
+    height: 24.81px;
+
+    @include tablet {
+      & {
+        width: 58.98px;
+        height: 36.04px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 64.34px;
+        height: 39.32px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 72px;
+        height: 44px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(3) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include laptop {
+    & {
+      top: 50%;
+      left: 70px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include fullHd {
+    & {
+      left: 142px;
+    }
+  }
+
+  & img {
+    width: 38.34px;
+    height: 34.96px;
+
+    @include tablet {
+      & {
+        width: 55.7px;
+        height: 50.79px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 60.77px;
+        height: 55.4px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 68px;
+        height: 62px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(4) {
+  top: 61px;
+  right: 66px;
+
+  @include tablet {
+    & {
+      top: 114px;
+      right: 142px;
+    }
+  }
+
+  @include laptop {
+    & {
+      top: 84px;
+      left: 0px;
+    }
+  }
+
+  & img {
+    width: 36.65px;
+    height: 37.21px;
+
+    @include tablet {
+      & {
+        width: 53.24px;
+        height: 54.06px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 58.09px;
+        height: 58.98px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 65px;
+        height: 66px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(5) {
+  right: 0;
+  top: 129px;
+
+  @include tablet {
+    & {
+      top: 258px;
+    }
+  }
+
+  @include laptop {
+    & {
+      top: 0;
+      left: 168px;
+      right: auto;
+    }
+  }
+
+  @include fullHd {
+    & {
+      left: 284px;
+    }
+  }
+
+  & img {
+    width: 38.34px;
+    height: 38.34px;
+
+    @include tablet {
+      & {
+        width: 55.7px;
+        height: 55.7px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 60.77px;
+        height: 60.77px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 68px;
+        height: 68px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(6) {
+  right: 0;
+  bottom: 129px;
+
+  @include tablet {
+    & {
+      bottom: 259px;
+    }
+  }
+
+  @include laptop {
+    & {
+      bottom: auto;
+      top: 0;
+      right: 168px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      right: 282px;
+    }
+  }
+
+  & img {
+    width: 37.21px;
+    height: 30.45px;
+
+    @include tablet {
+      & {
+        width: 54.06px;
+        height: 44.23px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 58.98px;
+        height: 48.26px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 66px;
+        height: 54px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(7) {
+  right: 66px;
+  bottom: 61px;
+
+  @include tablet {
+    & {
+      right: 142px;
+      bottom: 114px;
+    }
+  }
+
+  @include laptop {
+    & {
+      top: 84px;
+      right: 0px;
+    }
+  }
+
+  & img {
+    width: 36.56px;
+    height: 37.78px;
+
+    @include tablet {
+      & {
+        width: 53.11px;
+        height: 54.88px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 57.94px;
+        height: 59.87px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 64.84px;
+        height: 67px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(8) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include laptop {
+    & {
+      left: auto;
+      bottom: auto;
+      top: 50%;
+      right: 70px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include fullHd {
+    & {
+      right: 142px;
+    }
+  }
+
+  & img {
+    width: 31.58px;
+    height: 38.34px;
+
+    @include tablet {
+      & {
+        width: 50.04px;
+        height: 55.7px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 50.04px;
+        height: 60.77px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 56px;
+        height: 68px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(9) {
+  bottom: 61px;
+  left: 66px;
+
+  @include tablet {
+    & {
+      left: 142px;
+      bottom: 114px;
+    }
+  }
+
+  @include laptop {
+    & {
+      left: auto;
+      right: 0;
+      bottom: 84px;
+    }
+  }
+
+  & img {
+    width: 40.6px;
+    height: 24.81px;
+
+    @include tablet {
+      & {
+        width: 76.85px;
+        height: 24.57px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 76.85px;
+        height: 26.81px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 86px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.businesses-list__element:nth-child(10) {
+  bottom: 129px;
+  left: 0;
+
+  @include tablet {
+    & {
+      bottom: 258px;
+    }
+  }
+
+  @include laptop {
+    & {
+      left: auto;
+      right: 168px;
+      bottom: 0;
+    }
+  }
+
+  @include fullHd {
+    & {
+      right: 334px;
+    }
+  }
+
+  & img {
+    width: 46.23px;
+    height: 42.85px;
+
+    @include tablet {
+      & {
+        width: 67.17px;
+        height: 62.26px;
+      }
+    }
+
+    @include laptop {
+      & {
+        width: 73.28px;
+        height: 67.91px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        width: 82px;
+        height: 76px;
+      }
+    }
+  }
+}
+
+.businesses {
+  padding: 13px;
+  width: 76px;
+  height: 76px;
+
+  border-radius: 8px;
+  transform: rotate(45deg);
+
+  background: radial-gradient(
+    95.51% 95.51% at 50% 50%,
+    rgba(246, 245, 245, 0.5) 0%,
+    rgba(250, 250, 250, 0.5) 100%
+  );
+
+  @include tablet {
+    & {
+      width: 110px;
+      height: 107px;
+    }
+  }
+
+  & div {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background: radial-gradient(
+      95.51% 95.51% at 50% 50%,
+      rgba(218, 218, 218, 0.8) 0%,
+      rgba(250, 250, 250, 0.8) 100%
+    );
+  }
+
+  & img {
+    transform: rotate(-45deg);
+  }
+}
+
+.businesses-main {
+  transform: rotate(45deg);
+
+  padding: 14px;
+
+  width: 243px;
+  height: 243px;
+
+  border-radius: 17.7451px;
+  background: rgba(251, 36, 43, 0.3);
+
+  @include tablet {
+    & {
+      width: 346px;
+      height: 346px;
+    }
+  }
+
+  @include laptop {
+    & {
+      padding: 19px;
+
+      width: 329px;
+      height: 329px;
+    }
+  }
+
+  @include fullHd {
+    & {
+      padding: 20px;
+
+      width: 359px;
+      height: 359px;
+    }
+  }
+
+  .businesses-main__box-1 {
+    padding: 16px;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 17.7451px;
+    background: rgba(251, 36, 43, 0.4);
+
+    @include laptop {
+      & {
+        padding: 22px;
+      }
+    }
+
+    @include fullHd {
+      & {
+        padding: 24px;
+      }
+    }
+  }
+
+  .businesses-main__box-2 {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 17.7451px;
+    background: #fb242b;
+  }
+
+  .businesses-main__box-3 {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 40px;
+
+    transform: rotate(-45deg);
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.23;
+    text-align: center;
+
+    color: var(--text-white);
+
+    @include tablet {
+      & {
+        padding-top: 58px;
+        font-size: 32px;
+      }
+    }
+
+    p {
+      white-space: nowrap;
+    }
+
+    &::after {
+      content: '';
+      margin: 12px auto 0 auto;
+      display: block;
+      height: 51px;
+      width: 137px;
+      border-radius: 0 0 68.5px 68.5px;
+      border-bottom: 3px solid #ffffff;
+      border-left: 3px solid #ffffff;
+      border-right: 3px solid #ffffff;
+      overflow: hidden;
+      background-color: transparent;
+
+      @include tablet {
+        & {
+          margin-top: 17px;
+
+          height: 73px;
+          width: 196px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.field-label-main {
+  position: relative;
+  min-width: 295px;
+  max-width: 100%;
+
+  margin-top: 16px;
+
+  & span {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.21;
+
+    @include fullHd {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.field-input-main {
+  outline: none;
+
+  width: 100%;
+  padding: 11px 16px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  background-color: var(--input-color);
+
+  transition: $eBorderColor;
+
+  &:focus,
+  &:hover {
+    border-color: var(--input-border);
+  }
+
+  &.invalid {
+    border-color: var(--input-error);
+  }
+}
+
+.field-text-error {
+  position: absolute;
+  right: 0;
+  border: -3px;
+
+  opacity: 0;
+
+  color: var(--input-error);
+  transition: $eOpacity;
+
+  .field-input-main.invalid + & {
+    opacity: 1;
+  }
+}

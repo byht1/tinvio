@@ -1,0 +1,125 @@
+.contactForm-bg {
+  padding-top: 70px;
+  padding-bottom: 438px;
+
+  background-image: url('/img/contactForm/map-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 559px 386px;
+  background-position: bottom 63px right 4px;
+
+  @include tablet {
+    & {
+      padding-top: 118px;
+      padding-bottom: 489px;
+
+      background-image: url('/img/contactForm/map-tablet.png');
+      background-size: 699px 501px;
+      background-position: bottom 65px right 111px;
+    }
+  }
+
+  @include laptop {
+    padding-top: 227px;
+    padding-bottom: 90px;
+
+    background-image: url('/img/contactForm/map-laptop.png');
+    background-size: 752px 489px;
+    background-position: bottom 42px right 492px;
+  }
+
+  @include desktop {
+    padding-top: 223px;
+
+    background-image: url('/img/contactForm/map-desktop.png'), url('/img/contactForm/stars.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 987px 688px, 229px 696px;
+    background-position: bottom 57px right 531px, right 0 bottom 59px;
+  }
+}
+
+#contactForm {
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0 auto;
+    max-width: 477px;
+
+    @include laptop {
+      & {
+        max-width: 455px;
+        margin: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.contactForm__box {
+  @include laptop {
+    & {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.contactForm {
+  padding: 40px 24px;
+  margin: 0 auto;
+  max-width: 489px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    padding: 80px 80px 72px 80px;
+    border-radius: 36px;
+
+    background-color: #ffffff;
+  }
+
+  @include laptop {
+    & {
+      margin: 0;
+    }
+  }
+}
+
+.label-main {
+  &:nth-child(2) {
+    margin-top: 32px;
+  }
+}
+
+.button__submit {
+  width: 180px;
+  margin: 48px auto 0 auto;
+  padding-left: 63px;
+  padding-right: 63px;
+
+  display: inline-block;
+}
+
+.support-text__box {
+  margin-top: 12px;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.map-img {
+  position: relative;
+  top: -27px;
+  right: 4px;
+  max-height: 386px;
+  width: auto;
+}
