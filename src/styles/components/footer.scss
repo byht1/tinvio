@@ -1,0 +1,192 @@
+.footer-box {
+  padding-top: 40px;
+  padding-bottom: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    & {
+      padding-top: 32px;
+      padding-bottom: 16px;
+    }
+  }
+
+  @include laptop {
+    & {
+      padding-top: 48px;
+
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+
+.logo__link {
+  @include laptop {
+    & {
+      padding-right: 24px;
+      border-right: 1px solid #c4c4c4;
+    }
+  }
+
+  & img {
+    width: 114px;
+    height: 38px;
+  }
+}
+
+.footer__nav {
+  margin-top: 24px;
+
+  @include laptop {
+    & {
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include tablet {
+    & {
+      flex-direction: row;
+      gap: 56px;
+    }
+  }
+
+  @include laptop {
+    & {
+      gap: 24px;
+    }
+  }
+
+  @include desktop {
+    & {
+      gap: 32px;
+    }
+  }
+
+  & a {
+    font-family: 'Gilroy';
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-main);
+
+    @include tablet {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.footer__network-box {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include tablet {
+    & {
+      margin-top: 32px;
+
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+
+  @include laptop {
+    & {
+      margin: 0;
+      gap: 24px;
+    }
+  }
+}
+
+.footer__network-list,
+.footer__store-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer__network-list {
+  @include laptop {
+    & {
+      padding-right: 24px;
+      border-right: 1px solid #c4c4c4;
+    }
+  }
+}
+
+.copyright__box {
+  margin-top: 16px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+
+  color: var(--text-placeholder);
+
+  @include tablet {
+    & {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 12px;
+    }
+  }
+
+  @include laptop {
+    & {
+      margin-top: 0;
+      flex-basis: 100%;
+    }
+  }
+
+  & p {
+    @include tablet {
+      & {
+        padding-right: 8px;
+        border-right: 1px solid #c4c4c4;
+      }
+    }
+  }
+
+  & span:nth-child(2) {
+    margin-right: 8px;
+    padding-right: 8px;
+
+    border-right: 1px solid #c4c4c4;
+
+    @include tablet {
+      & {
+        margin: 0;
+      }
+    }
+  }
+
+  & span {
+    display: inline-block;
+    margin-top: 8px;
+
+    @include tablet {
+      & {
+        margin: 0;
+      }
+    }
+  }
+}
